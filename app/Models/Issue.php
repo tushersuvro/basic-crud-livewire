@@ -15,5 +15,5 @@ class Issue extends Model
     {
         return $this->belongsTo(Client::class);
     }
-    
+
 }

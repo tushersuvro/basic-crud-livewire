@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Issues\IssueList;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('issues', IssueList::class)->name('issues');
+
