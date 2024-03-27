@@ -23,7 +23,7 @@
                 <a class="nav-link" href="{{ route('issues') }}">Issues</a>
             </li>
             <li class="nav-item">
-{{--                <a class="nav-link" href="{{ route('issues.create') }}">Create an Issue</a>--}}
+                <a class="nav-link" href="{{ route('issues.create') }}">Create an Issue</a>
             </li>
         </ul>
     </div>

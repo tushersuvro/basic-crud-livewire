@@ -33,9 +33,9 @@
                     {{ $issue->created_at->toDateString() }}
                 </td>
                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-{{--                    <a href="{{ route('issues.edit', $issue->id) }}" class="btn btn-sm btn-primary">--}}
+                    <a href="{{ route('issues.edit', $issue->id) }}" class="btn btn-sm btn-primary">
                         Edit
-{{--                    </a>--}}
+                    </a>
                     <button wire:click="delete({{ $issue }})" class="btn btn-sm btn-danger">
                         Delete
                     </button>

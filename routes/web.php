@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Issues\IssueForm;
 use App\Livewire\Issues\IssueList;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('issues', IssueList::class)->name('issues');
 
+Route::get('issues/create', IssueForm::class)->name('issues.create');
+Route::get('issues/{issue}', IssueForm::class)->name('issues.edit');
